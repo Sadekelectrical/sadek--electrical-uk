@@ -13,6 +13,7 @@ body{
   color:white;
 }
 
+/* HEADER */
 header{
   display:flex;
   justify-content:space-between;
@@ -32,10 +33,11 @@ header{
 }
 
 .bolt{
-  font-size:50px;
+  font-size:55px;
   color:#facc15;
 }
 
+/* LAYOUT */
 .container{
   padding:20px;
   max-width:1000px;
@@ -53,15 +55,34 @@ h2{
   color:#facc15;
 }
 
-a.button{
+/* BUTTON */
+.button{
   display:inline-block;
-  margin-top:10px;
   padding:10px 15px;
+  margin-top:10px;
   background:#facc15;
   color:black;
   text-decoration:none;
   border-radius:6px;
   font-weight:bold;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:10px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:10px;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+.gallery img:hover{
+  transform:scale(1.05);
 }
 </style>
 
@@ -90,23 +111,32 @@ a.button{
 
   <div class="card">
     <h2>Emergency Services</h2>
-    <p>24/7 emergency electrical repairs and fault finding.</p>
-  </div>
-
-  <div class="card">
-    <h2>Our Services</h2>
-    <p>Domestic, Commercial and Industrial Electrical Services</p>
+    <p>24/7 emergency electrical support for faults and urgent repairs.</p>
   </div>
 
   <div class="card">
     <h2>Industrial Services</h2>
     <p>
-    • Industrial machines & wiring<br>
-    • Control circuits (Control Panels)<br>
-    • Three-phase motor systems<br>
-    • Fire Alarm systems<br>
-    • Fault finding & maintenance
+      • Industrial machines & wiring<br>
+      • Control circuits (Control Panels)<br>
+      • Three-phase motor systems<br>
+      • Fire Alarm systems<br>
+      • Fault finding & maintenance
     </p>
+  </div>
+
+  <!-- GALLERY -->
+  <div class="card">
+    <h2>Our Work Gallery</h2>
+    <div class="gallery">
+
+      <!-- بعداً عکس‌ها را داخل /images آپلود می‌کنی -->
+      <img src="images/work1.jpg" alt="">
+      <img src="images/work2.jpg" alt="">
+      <img src="images/work3.jpg" alt="">
+      <img src="images/work4.jpg" alt="">
+
+    </div>
   </div>
 
   <div class="card">
@@ -115,7 +145,7 @@ a.button{
     <p>✉ mail@sadekelectrical.co.uk</p>
     <p>📷 @sadekelectrical</p>
 
-    <a class="button" href="https://wa.me/447308299380">WhatsApp Us</a>
+    <a class="button" href="https://wa.me/447308299380">WhatsApp</a>
   </div>
 
   <div class="card">
