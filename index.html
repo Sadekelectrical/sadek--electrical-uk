@@ -3,13 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sadek Electrical UK</title>
+
+<title>Sadek Electrical UK | Electrician Manchester</title>
+<meta name="description" content="Professional electrician in Manchester. Domestic, industrial electrical services, fire alarms, control panels, 25 years experience.">
 
 <style>
+
 body{
   margin:0;
   font-family:Arial;
-  background:#0f172a;
+  background:linear-gradient(135deg,#0b1220,#1e3a8a);
   color:white;
 }
 
@@ -19,7 +22,10 @@ header{
   justify-content:space-between;
   align-items:center;
   padding:20px;
-  background:#111827;
+  background:rgba(0,0,0,0.4);
+  backdrop-filter:blur(6px);
+  position:sticky;
+  top:0;
 }
 
 .logo{
@@ -28,30 +34,31 @@ header{
   line-height:1.2;
 }
 
-.logo span{
-  color:#facc15;
-}
+.logo span{ color:#facc15; }
 
 .bolt{
-  font-size:55px;
+  font-size:45px;
   color:#facc15;
 }
 
-/* LAYOUT */
+/* CONTAINER */
 .container{
   padding:20px;
   max-width:1000px;
   margin:auto;
 }
 
+/* CARDS */
 .card{
-  background:#1f2937;
+  background:rgba(255,255,255,0.06);
   padding:15px;
   margin:15px 0;
-  border-radius:10px;
+  border-radius:12px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.3);
+  backdrop-filter:blur(4px);
 }
 
-h2{
+h1,h2{
   color:#facc15;
 }
 
@@ -59,11 +66,10 @@ h2{
 .button{
   display:inline-block;
   padding:10px 15px;
-  margin-top:10px;
   background:#facc15;
   color:black;
   text-decoration:none;
-  border-radius:6px;
+  border-radius:8px;
   font-weight:bold;
 }
 
@@ -77,13 +83,32 @@ h2{
 .gallery img{
   width:100%;
   border-radius:10px;
-  transition:0.3s;
   cursor:pointer;
+  transition:0.3s;
 }
 
 .gallery img:hover{
-  transform:scale(1.05);
+  transform:scale(1.07);
 }
+
+/* FLOATING CALL BUTTON */
+.call-btn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#22c55e;
+  color:white;
+  padding:14px 16px;
+  border-radius:50px;
+  font-weight:bold;
+  text-decoration:none;
+  box-shadow:0 4px 10px rgba(0,0,0,0.4);
+}
+
+.call-btn:hover{
+  transform:scale(1.1);
+}
+
 </style>
 
 </head>
@@ -102,58 +127,66 @@ h2{
 <div class="container">
 
   <h1>Sadek Electrical UK</h1>
-  <p>Professional Electrical Services in Manchester & Surrounding Areas</p>
+  <p>Electrician in Manchester & Surrounding Areas | 25 Years Experience</p>
 
   <div class="card">
     <h2>25 Years Experience</h2>
-    <p>Reliable electrical services with 25 years of experience in domestic, commercial and industrial work.</p>
+    <p>Reliable domestic and industrial electrical services.</p>
   </div>
 
   <div class="card">
     <h2>Emergency Services</h2>
-    <p>24/7 emergency electrical support for faults and urgent repairs.</p>
+    <p>24/7 emergency electrical fault finding and repair.</p>
   </div>
 
   <div class="card">
     <h2>Industrial Services</h2>
     <p>
-      • Industrial machines & wiring<br>
-      • Control circuits (Control Panels)<br>
-      • Three-phase motor systems<br>
-      • Fire Alarm systems<br>
-      • Fault finding & maintenance
+      ✔ Industrial wiring<br>
+      ✔ Control panels<br>
+      ✔ Three-phase motor systems<br>
+      ✔ Fire alarm systems<br>
+      ✔ Fault finding & maintenance
     </p>
   </div>
 
   <!-- GALLERY -->
   <div class="card">
     <h2>Our Work Gallery</h2>
+
     <div class="gallery">
-
-      <!-- بعداً عکس‌ها را داخل /images آپلود می‌کنی -->
-      <img src="images/work1.jpg" alt="">
-      <img src="images/work2.jpg" alt="">
-      <img src="images/work3.jpg" alt="">
-      <img src="images/work4.jpg" alt="">
-
+      <img src="images/work1.jpg" onclick="window.open(this.src)">
+      <img src="images/work2.jpg" onclick="window.open(this.src)">
+      <img src="images/work3.jpg" onclick="window.open(this.src)">
+      <img src="images/work4.jpg" onclick="window.open(this.src)">
     </div>
   </div>
 
+  <!-- CONTACT -->
   <div class="card">
     <h2>Contact</h2>
+
     <p>📞 07308299380</p>
-    <p>✉ mail@sadekelectrical.co.uk</p>
-    <p>📷 @sadekelectrical</p>
 
-    <a class="button" href="https://wa.me/447308299380">WhatsApp</a>
-  </div>
+    <p>
+      ✉ <a href="mailto:mail@sadekelectrical.co.uk" style="color:#facc15;text-decoration:none;">
+      mail@sadekelectrical.co.uk</a>
+    </p>
 
-  <div class="card">
-    <h2>Areas</h2>
-    <p>Manchester & surrounding areas</p>
+    <p>
+      📷 <a href="https://instagram.com/sadekelectrical" target="_blank" style="color:#facc15;">
+      @sadekelectrical</a>
+    </p>
+
+    <a class="button" href="https://wa.me/447308299380" target="_blank">
+      WhatsApp Us
+    </a>
   </div>
 
 </div>
+
+<!-- FLOAT CALL BUTTON -->
+<a class="call-btn" href="tel:07308299380">📞 Call Now</a>
 
 </body>
 </html>
