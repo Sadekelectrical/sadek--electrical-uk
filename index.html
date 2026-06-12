@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,11 +11,10 @@
 
 body{
     margin:0;
-    font-family:Arial, sans-serif;
+    font-family:Arial;
     background:#f3f4f6;
     color:#111827;
 }
-
 
 /* HEADER */
 
@@ -24,319 +22,129 @@ header{
     background:#111827;
     color:white;
     padding:25px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    text-align:center;
 }
-
 
 .logo{
     font-size:28px;
     font-weight:bold;
-    line-height:1.1;
 }
-
 
 .logo span{
     color:#facc15;
 }
 
-
-/* MAIN */
+/* CONTAINER */
 
 .container{
-
     max-width:1000px;
     margin:auto;
     padding:20px;
-
 }
 
-
-h1{
-
-    text-align:center;
-    color:#111827;
-
-}
-
-
-h2{
-
-    color:#d97706;
-
-}
-
-
-/* CARDS */
+/* CARD */
 
 .card{
-
     background:white;
     padding:20px;
     margin:20px 0;
     border-radius:12px;
     box-shadow:0 3px 10px rgba(0,0,0,0.08);
-
 }
 
+h2{
+    color:#d97706;
+}
 
-
-/* BUTTONS */
-
+/* BUTTON */
 
 .button{
-
-display:inline-block;
-padding:12px 20px;
-margin:5px;
-background:#facc15;
-color:#111827;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-
+    display:inline-block;
+    padding:12px 20px;
+    margin:5px;
+    background:#facc15;
+    color:#111827;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
 }
-
 
 /* INSTAGRAM */
 
-.instagram-gallery{
-
-width:100%;
-overflow:hidden;
-
+iframe{
+    width:100%;
+    border:0;
+    min-height:500px;
 }
-
-
-.lightwidget-widget{
-
-min-height:500px;
-
-}
-
-
-
-/* MOBILE */
-
-
-@media(max-width:600px){
-
-.logo{
-
-font-size:22px;
-
-}
-
-h1{
-
-font-size:26px;
-
-}
-
-}
-
 
 </style>
 
-
 </head>
-
 
 <body>
 
-
 <header>
-
 <div class="logo">
-
-SADEK<br>
-<span>ELECTRICAL</span>
-
+SADEK<br><span>ELECTRICAL</span>
 </div>
-
 </header>
-
-
 
 <div class="container">
 
-
-<h1>
-Sadek Electrical UK
-</h1>
-
+<h1 style="text-align:center;">Sadek Electrical UK</h1>
 
 <p style="text-align:center;">
 Professional Electrical Services in UK
 </p>
 
-
-
+<div class="card">
+<h2>25 Years Experience</h2>
+<p>Reliable electrical services for homes and businesses.</p>
+</div>
 
 <div class="card">
-
-<h2>
-25 Years Experience
-</h2>
-
-<p>
-Reliable electrical services for homes, businesses and industrial projects.
-</p>
-
+<h2>Emergency Services</h2>
+<p>24/7 fault finding and electrical repair.</p>
 </div>
-
-
-
-
 
 <div class="card">
-
-
-<h2>
-Emergency Services
-</h2>
-
+<h2>Industrial Services</h2>
 <p>
-24/7 emergency electrical support and fault finding.
+Wiring systems<br>
+Control panels<br>
+Three-phase motors<br>
+Fire alarms<br>
+Maintenance
 </p>
-
-
 </div>
-
-
-
-
 
 <div class="card">
+<h2>Our Work Gallery</h2>
 
-
-<h2>
-Industrial Services
-</h2>
-
-
-<p>
-
-Industrial machines & wiring<br>
-Control circuits<br>
-Three-phase motor systems<br>
-Fire Alarm systems<br>
-Fault finding & maintenance
-
-</p>
-
+<!-- Instagram embed -->
+<iframe src="https://lightwidget.com/widgets/b69769262a425edfb6caedfaf608eac0.html"></iframe>
 
 </div>
-
-
-
-
-
 
 <div class="card">
+<h2>Contact</h2>
 
+<p>📞 07308299380</p>
+<p>✉ mail@sadekelectrical.co.uk</p>
+<p>Instagram: @sadekelectrical</p>
 
-<h2>
-Our Work Gallery
-</h2>
-
-
-<div class="instagram-gallery">
-
-
-<!-- LightWidget WIDGET -->
-
-<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-
-
-<iframe 
-src="//lightwidget.com/widgets/b69769262a425edfb6caedfaf608eac0.html"
-scrolling="no"
-allowtransparency="true"
-class="lightwidget-widget"
-style="width:100%;border:0;overflow:hidden;">
-</iframe>
-
+<a class="button" href="tel:07308299380">Call</a>
+<a class="button" href="https://wa.me/447308299380">WhatsApp</a>
+<a class="button" href="https://instagram.com/sadekelectrical">Instagram</a>
 
 </div>
-
-
-</div>
-
-
-
-
-
-
-
 
 <div class="card">
-
-
-<h2>
-Contact
-</h2>
-
-
-<p>
-📞 07308299380
-</p>
-
-
-<p>
-✉ mail@sadekelectrical.co.uk
-</p>
-
-
-<p>
-Instagram: @sadekelectrical
-</p>
-
-
-<a class="button" href="tel:07308299380">
-Call Now
-</a>
-
-
-<a class="button" href="https://wa.me/447308299380">
-WhatsApp
-</a>
-
-
-<a class="button" href="https://instagram.com/sadekelectrical">
-Instagram
-</a>
-
-
+<h2>Areas</h2>
+<p>Manchester & surrounding areas</p>
 </div>
 
-
-
-
-
-
-<div class="card">
-
-
-<h2>
-Areas
-</h2>
-
-
-<p>
-Manchester & surrounding areas
-</p>
-
-
 </div>
-
-
-
-</div>
-
 
 </body>
-
-
 </html>
