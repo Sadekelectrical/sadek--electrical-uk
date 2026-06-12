@@ -1,192 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sadek Electrical UK | Electrician Manchester</title>
-<meta name="description" content="Professional electrician in Manchester. Domestic, industrial electrical services, fire alarms, control panels, 25 years experience.">
+<title>Sadek Electrical UK</title>
 
 <style>
 
 body{
-  margin:0;
-  font-family:Arial;
-  background:linear-gradient(135deg,#0b1220,#1e3a8a);
-  color:white;
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f3f4f6;
+    color:#111827;
 }
+
 
 /* HEADER */
+
 header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px;
-  background:rgba(0,0,0,0.4);
-  backdrop-filter:blur(6px);
-  position:sticky;
-  top:0;
+    background:#111827;
+    color:white;
+    padding:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
+
 
 .logo{
-  font-size:22px;
-  font-weight:bold;
-  line-height:1.2;
+    font-size:28px;
+    font-weight:bold;
+    line-height:1.1;
 }
 
-.logo span{ color:#facc15; }
 
-.bolt{
-  font-size:45px;
-  color:#facc15;
+.logo span{
+    color:#facc15;
 }
 
-/* CONTAINER */
+
+/* MAIN */
+
 .container{
-  padding:20px;
-  max-width:1000px;
-  margin:auto;
+
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+
 }
+
+
+h1{
+
+    text-align:center;
+    color:#111827;
+
+}
+
+
+h2{
+
+    color:#d97706;
+
+}
+
 
 /* CARDS */
+
 .card{
-  background:rgba(255,255,255,0.06);
-  padding:15px;
-  margin:15px 0;
-  border-radius:12px;
-  box-shadow:0 6px 15px rgba(0,0,0,0.3);
-  backdrop-filter:blur(4px);
+
+    background:white;
+    padding:20px;
+    margin:20px 0;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+
 }
 
-h1,h2{
-  color:#facc15;
-}
 
-/* BUTTON */
+
+/* BUTTONS */
+
+
 .button{
-  display:inline-block;
-  padding:10px 15px;
-  background:#facc15;
-  color:black;
-  text-decoration:none;
-  border-radius:8px;
-  font-weight:bold;
+
+display:inline-block;
+padding:12px 20px;
+margin:5px;
+background:#facc15;
+color:#111827;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+
 }
 
-/* GALLERY */
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-  gap:10px;
+
+/* INSTAGRAM */
+
+.instagram-gallery{
+
+width:100%;
+overflow:hidden;
+
 }
 
-.gallery img{
-  width:100%;
-  border-radius:10px;
-  cursor:pointer;
-  transition:0.3s;
+
+.lightwidget-widget{
+
+min-height:500px;
+
 }
 
-.gallery img:hover{
-  transform:scale(1.07);
+
+
+/* MOBILE */
+
+
+@media(max-width:600px){
+
+.logo{
+
+font-size:22px;
+
 }
 
-/* FLOATING CALL BUTTON */
-.call-btn{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#22c55e;
-  color:white;
-  padding:14px 16px;
-  border-radius:50px;
-  font-weight:bold;
-  text-decoration:none;
-  box-shadow:0 4px 10px rgba(0,0,0,0.4);
+h1{
+
+font-size:26px;
+
 }
 
-.call-btn:hover{
-  transform:scale(1.1);
 }
+
 
 </style>
 
+
 </head>
+
 
 <body>
 
+
 <header>
-  <div class="logo">
-    SADEK<br>
-    <span>ELECTRICAL</span>
-  </div>
 
-  <div class="bolt">⚡</div>
-</header>
+<div class="logo">
 
-<div class="container">
-
-  <h1>Sadek Electrical UK</h1>
-  <p>Electrician in Manchester & Surrounding Areas | 25 Years Experience</p>
-
-  <div class="card">
-    <h2>25 Years Experience</h2>
-    <p>Reliable domestic and industrial electrical services.</p>
-  </div>
-
-  <div class="card">
-    <h2>Emergency Services</h2>
-    <p>24/7 emergency electrical fault finding and repair.</p>
-  </div>
-
-  <div class="card">
-    <h2>Industrial Services</h2>
-    <p>
-      ✔ Industrial wiring<br>
-      ✔ Control panels<br>
-      ✔ Three-phase motor systems<br>
-      ✔ Fire alarm systems<br>
-      ✔ Fault finding & maintenance
-    </p>
-  </div>
-
-  <!-- GALLERY -->
-  <div class="card">
-    <h2>Our Work Gallery</h2>
-
-    <div class="gallery">
-      <img src="images/work1.jpg" onclick="window.open(this.src)">
-      <img src="images/work2.jpg" onclick="window.open(this.src)">
-      <img src="images/work3.jpg" onclick="window.open(this.src)">
-      <img src="images/work4.jpg" onclick="window.open(this.src)">
-    </div>
-  </div>
-
-  <!-- CONTACT -->
-  <div class="card">
-    <h2>Contact</h2>
-
-    <p>📞 07308299380</p>
-
-    <p>
-      ✉ <a href="mailto:mail@sadekelectrical.co.uk" style="color:#facc15;text-decoration:none;">
-      mail@sadekelectrical.co.uk</a>
-    </p>
-
-    <p>
-      📷 <a href="https://instagram.com/sadekelectrical" target="_blank" style="color:#facc15;">
-      @sadekelectrical</a>
-    </p>
-
-    <a class="button" href="https://wa.me/447308299380" target="_blank">
-      WhatsApp Us
-    </a>
-  </div>
+SADEK<br>
+<span>ELECTRICAL</span>
 
 </div>
 
-<!-- FLOAT CALL BUTTON -->
-<a class="call-btn" href="tel:07308299380">📞 Call Now</a>
+</header>
+
+
+
+<div class="container">
+
+
+<h1>
+Sadek Electrical UK
+</h1>
+
+
+<p style="text-align:center;">
+Professional Electrical Services in UK
+</p>
+
+
+
+
+<div class="card">
+
+<h2>
+25 Years Experience
+</h2>
+
+<p>
+Reliable electrical services for homes, businesses and industrial projects.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+Emergency Services
+</h2>
+
+<p>
+24/7 emergency electrical support and fault finding.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+Industrial Services
+</h2>
+
+
+<p>
+
+Industrial machines & wiring<br>
+Control circuits<br>
+Three-phase motor systems<br>
+Fire Alarm systems<br>
+Fault finding & maintenance
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+Our Work Gallery
+</h2>
+
+
+<div class="instagram-gallery">
+
+
+<!-- LightWidget WIDGET -->
+
+<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+
+
+<iframe 
+src="//lightwidget.com/widgets/b69769262a425edfb6caedfaf608eac0.html"
+scrolling="no"
+allowtransparency="true"
+class="lightwidget-widget"
+style="width:100%;border:0;overflow:hidden;">
+</iframe>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+Contact
+</h2>
+
+
+<p>
+📞 07308299380
+</p>
+
+
+<p>
+✉ mail@sadekelectrical.co.uk
+</p>
+
+
+<p>
+Instagram: @sadekelectrical
+</p>
+
+
+<a class="button" href="tel:07308299380">
+Call Now
+</a>
+
+
+<a class="button" href="https://wa.me/447308299380">
+WhatsApp
+</a>
+
+
+<a class="button" href="https://instagram.com/sadekelectrical">
+Instagram
+</a>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+Areas
+</h2>
+
+
+<p>
+Manchester & surrounding areas
+</p>
+
+
+</div>
+
+
+
+</div>
+
 
 </body>
+
+
 </html>
